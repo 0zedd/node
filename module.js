@@ -106,27 +106,39 @@
 
 // server.listen(5000);
 
-const http = require('http');
+// const http = require('http');
 
-const server = http.createServer((req, res) => {
-  if (req.url === '/') {
-    res.end('welcome to the homepage');
-    return;
-  }
-  if (req.url === '/about') {
-    res.end('welcome to the aboutpage');
-    return;
-  }
-  if (req.url === '/history') {
-    res.end('welcome to the historypage');
-    return;
-  }
-  res.end(`
-    <h1>OOOpppsss no such page ehhhh</h1>
-    <a href="/">back to homepage</a>
-  `)
-});
+// const server = http.createServer((req, res) => {
+//   if (req.url === '/') {
+//     res.end('welcome to the homepage');
+//     return;
+//   }
+//   if (req.url === '/about') {
+//     res.end('welcome to the aboutpage');
+//     return;
+//   }
+//   if (req.url === '/history') {
+//     res.end('welcome to the historypage');
+//     return;
+//   }
+//   res.end(`
+//     <h1>OOOpppsss no such page ehhhh</h1>
+//     <a href="/">back to homepage</a>
+//   `)
+// });
 
-server.listen(3000, () => {
-  console.log('Server started on port 3000');
-});
+// server.listen(3000, () => {
+//   console.log('Server started on port 3000');
+// });
+
+// server again 
+// const http = require('http');
+
+// const server = http.createServer((req,res)=>{
+//   console.log('request event');
+//   res.end('Hello')
+// })
+
+// server.listen(300, ()=>{
+//   console.log('running on port: 300')
+// }) 
